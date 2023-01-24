@@ -1,4 +1,4 @@
-const randomID = (idLength) => {
+const randomId = (idLength = 10) => {
   let id = "";
   const characters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -8,3 +8,5 @@ const randomID = (idLength) => {
   }
   return id;
 };
+
+module.exports = randomId;
